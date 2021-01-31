@@ -1,4 +1,4 @@
-﻿body
+body
 {
 display: flex;
 flex-wrap: wrap;
@@ -7,6 +7,10 @@ width: calc(400px + 400px);
 header{
 	position:relative;
 	width: calc(200px + 400px);
+	box-shadow: 0 0 0 0.5rem tan;
+}
+p{
+background-color: tan;
 }
 #intro{
 	width: auto;
@@ -17,9 +21,6 @@ header{
 	margin-right: auto;
 	width:40%;
 	white-space: nowrap;
-}
-nav{
-	box-shadow: 0 0 0 1rem skyblue;
 }
 #breakfast:hover{
 	color: rgba(95,244,248,1);
@@ -45,9 +46,19 @@ ul li:nth-child(3){
 	font-size: 120%;
 	font-family: Comic Sans MS;
 }
-a:visited{
-	color: purple;
-}
 p::first-letter	{
 	font-size: 25px;
+}
+#lunch-img {
+	width: 100vw;
+	transform: translatex(calc((40em - 100vw)/2));
+}
+#vid{
+	object-fit: cover;
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	top:0;
+	left:0;
+	z-index: -1;
 }
