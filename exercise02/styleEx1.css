@@ -19,28 +19,8 @@ background-color: tan;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	width:40%;
+	width:57%;
 	white-space: nowrap;
-}
-#breakfast:hover{
-	color: rgba(95,244,248,1);
-	font-size: 200%;
-}
-ul li:first-child	{
-	background-color: yellow;
-	width: 40%;
-}
-ul li:nth-child(3){
-	background-color:green;
-	width: 40%;
-}
-#lunch:hover{
-	color: rgba(95,113,54,1);
-	font-size: 200%;
-}
-#dinner:hover{
-	color:hsla(120,100%,10%,0.6);;
-	font-size: 200%;
 }
 #links:hover{
 	font-size: 120%;
@@ -62,3 +42,46 @@ p::first-letter	{
 	left:0;
 	z-index: -1;
 }
+.main-nav,
+.drop-nav{
+	list-style: none;
+	text-align: center;
+}
+.main-nav > li{
+	float:left;
+	background-color: tan;
+	border: 1px solid black;
+	width: 20%;
+	position: relative;
+}
+.drop-nav > li,
+.flyout-nav > li{
+	background-color: tan;
+	padding: 2px;
+	margin: 0px;
+	text-align: center;
+	display: block;
+	width: 100px;
+}
+.dropdown,
+.flyout{
+	position: relative;
+}
+.drop-nav,
+.flyout-nav{
+	position:absolute;
+	display:none;
+}
+.drop-nav li,
+.flyout-nav li{
+	border-bottom: 1px solid white;
+}
+.dropdown:hover > .drop-nav,
+.flyout:hover > .flyout-nav{
+	display:block;
+}
+.flyout-nav {
+	left: 100%;
+	top: 0;
+}
+
