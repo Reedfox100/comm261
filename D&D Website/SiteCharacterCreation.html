@@ -6,9 +6,199 @@
 		<title>D&D 5th Edition Campaign Helper</title>
 		<link href="style.css" rel="stylesheet" type="text/css" >
 		<link rel="icon" type="dice/jpg" href="dice.jpg" size="96x96">
-		<stlye>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+		<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
 
-		</style>
+		<script type="text/javascript">
+		$(document).ready(function(){
+		var rollA1, rollA2, rollA3, rollA4, A_low, A_total;
+
+		var rollB1, rollB2, rollB3, rollB4, B_low, B_total;
+
+		var rollC1, rollC2, rollC3, rollC4, C_low, C_total;
+
+		var rollD1, rollD2, rollD3, rollD4, D_low, D_total;
+
+		var rollE1, rollE2, rollE3, rollE4, E_low, E_total;
+
+		var rollF1, rollF2, rollF3, rollF4, F_low, F_total;
+
+		console.log("JQUERY IS READY");
+		});
+		function characterRoller(){
+		console.log("characterRoller() - start");
+		rollA1 = Math.floor((Math.random() * 6) + 1);
+		rollA2 = Math.floor((Math.random() * 6) + 1);
+		rollA3 = Math.floor((Math.random() * 6) + 1);
+		rollA4 = Math.floor((Math.random() * 6) + 1);
+		 var A_array = [rollA1,rollA2,rollA3,rollA4];
+		 A_low = Math.min.apply(Math,A_array);
+		 A_total = rollA1 + rollA2 + rollA3 + rollA4 - A_low;
+
+		rollB1 = Math.floor((Math.random() * 6) + 1);
+		rollB2 = Math.floor((Math.random() * 6) + 1);
+		rollB3 = Math.floor((Math.random() * 6) + 1);
+		rollB4 = Math.floor((Math.random() * 6) + 1);
+		 var B_array = [rollB1,rollB2,rollB3,rollB4];
+		 B_low = Math.min.apply(Math,B_array);
+		 B_total = rollB1 + rollB2 + rollB3 + rollB4 - B_low;
+
+		rollC1 = Math.floor((Math.random() * 6) + 1);
+		rollC2 = Math.floor((Math.random() * 6) + 1);
+		rollC3 = Math.floor((Math.random() * 6) + 1);
+		rollC4 = Math.floor((Math.random() * 6) + 1);
+		 var C_array = [rollC1,rollC2,rollC3,rollC4];
+		 C_low = Math.min.apply(Math,C_array);
+		 C_total = rollC1 + rollC2 + rollC3 + rollC4 - C_low;
+
+		rollD1 = Math.floor((Math.random() * 6) + 1);
+		rollD2 = Math.floor((Math.random() * 6) + 1);
+		rollD3 = Math.floor((Math.random() * 6) + 1);
+		rollD4 = Math.floor((Math.random() * 6) + 1);
+		 var D_array = [rollD1,rollD2,rollD3,rollD4];
+		 D_low = Math.min.apply(Math,D_array);
+		 D_total = rollD1 + rollD2 + rollD3 + rollD4 - D_low;
+
+		rollE1 = Math.floor((Math.random() * 6) + 1);
+		rollE2 = Math.floor((Math.random() * 6) + 1);
+		rollE3 = Math.floor((Math.random() * 6) + 1);
+		rollE4 = Math.floor((Math.random() * 6) + 1);
+		 var E_array = [rollE1,rollE2,rollE3,rollE4];
+		 E_low = Math.min.apply(Math,E_array);
+		 E_total = rollE1 + rollE2 + rollE3 + rollE4 - E_low;
+
+		rollF1 = Math.floor((Math.random() * 6) + 1);
+		rollF2 = Math.floor((Math.random() * 6) + 1);
+		rollF3 = Math.floor((Math.random() * 6) + 1);
+		rollF4 = Math.floor((Math.random() * 6) + 1);
+		 var F_array = [rollF1,rollF2,rollF3,rollF4];
+		 F_low = Math.min.apply(Math,F_array);
+		 F_total = rollF1 + rollF2 + rollF3 + rollF4 - F_low;
+
+		 $("#charScoreRoll").html("Your scores are: " + A_total + ", " + B_total + ", " + C_total + ", " + D_total + ", " + E_total + ", " + F_total);
+		}
+		</script>
+
+		<script type="text/javascript">
+		$(document).ready(function(){
+		var roll;
+		var value;
+		console.log("JQUERY IS READY");
+		});
+		function characterChooser(){
+		roll = Math.floor((Math.random() * 12) + 1);
+		if(roll == 1){
+			value = "Barbarian";
+		}
+		else if(roll == 2){
+			value = "Bard";
+		}
+		else if(roll == 3){
+			value = "Cleric";
+		}
+		else if(roll == 4){
+			value = "Druid";
+		}
+		else if(roll == 5){
+			value = "Fighter";
+		}
+		else if(roll == 6){
+			value = "Monk";
+		}
+		else if(roll == 7){
+			value = "Paladin";
+		}
+		else if(roll == 8){
+			value = "Ranger";
+		}
+		else if(roll == 9){
+			value = "Rogue";
+		}
+		else if(roll == 10){
+			value = "Sorcerer";
+		}
+		else if(roll == 11){
+			value = "Warlock";
+		}
+		else{
+			value = "Wizard";
+		}
+		$("#charChooseRoll").html("Your character: " + value);
+		}
+		</script>
+
+		<script type="text/javascript">
+		$(document).ready(function(){
+        console.log("JQUERY IS READY!");
+		});
+		function rollTheDie100(){
+        console.log("rollTheDie() - start");    
+        $("#die_roll_content").html("Your die roll is <strong>: " +  Math.floor(Math.random()*100 + 1) + " out of 100</strong>");
+        console.log("rollTheDie() - #die_roll_content in your document was updated.");  
+		}
+		</script>
+		<script type="text/javascript">
+		$(document).ready(function(){
+        console.log("JQUERY IS READY!");
+		});
+		function rollTheDie20(){
+        console.log("rollTheDie() - start");    
+        $("#die_roll_content").html("Your die roll is <strong>: " +  Math.floor(Math.random()*20 + 1) + " out of 20</strong>");
+        console.log("rollTheDie() - #die_roll_content in your document was updated.");  
+		}
+		</script>
+		<script type="text/javascript">
+		$(document).ready(function(){
+        console.log("JQUERY IS READY!");
+		});
+		function rollTheDie12(){
+        console.log("rollTheDie() - start");    
+        $("#die_roll_content").html("Your die roll is <strong>: " +  Math.floor(Math.random()*12 + 1) + " out of 12</strong>");
+        console.log("rollTheDie() - #die_roll_content in your document was updated.");  
+		}
+		</script>
+		<script type="text/javascript">
+		$(document).ready(function(){
+        console.log("JQUERY IS READY!");
+		});
+		function rollTheDie10(){
+        console.log("rollTheDie() - start");    
+        $("#die_roll_content").html("Your die roll is <strong>: " +  Math.floor(Math.random()*10 + 1) + " out of 10</strong>");
+        console.log("rollTheDie() - #die_roll_content in your document was updated.");  
+		}
+		</script>
+		<script type="text/javascript">
+		$(document).ready(function(){
+        console.log("JQUERY IS READY!");
+		});
+		function rollTheDie8(){
+        console.log("rollTheDie() - start");    
+        $("#die_roll_content").html("Your die roll is <strong>: " +  Math.floor(Math.random()*8 + 1) + " out of 8</strong>");
+        console.log("rollTheDie() - #die_roll_content in your document was updated.");  
+		}
+		</script>
+		<script type="text/javascript">
+		$(document).ready(function(){
+        console.log("JQUERY IS READY!");
+		});
+		function rollTheDie6(){
+        console.log("rollTheDie() - start");    
+        $("#die_roll_content").html("Your die roll is <strong>: " +  Math.floor(Math.random()*6 + 1) + " out of 6</strong>");
+        console.log("rollTheDie() - #die_roll_content in your document was updated.");  
+		}
+		</script>
+		<script type="text/javascript">
+		$(document).ready(function(){
+        console.log("JQUERY IS READY!");
+		});
+		function rollTheDie4(){
+        console.log("rollTheDie() - start");    
+        $("#die_roll_content").html("Your die roll is <strong>: " +  Math.floor(Math.random()*4 + 1) + " out of 4</strong>");
+        console.log("rollTheDie() - #die_roll_content in your document was updated.");  
+		}
+		</script>
+
 		</head>
 	<body class="holder">
 		<header>
@@ -18,21 +208,30 @@
 		</header>
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-4 d-flex align-items-start">
+				<div class="col-lg-3 d-flex align-items-start">
 				<nav class="main-nav">
 				<ul>
 					<li><a id="home" class="animate-pop-in" href="SiteIndex.html">Home</a></li>
 					<li><a id="character" class="animate-pop-in" href="SiteCharacterCreation.html">Character Creation</a></li>
 					<li><a id="equip" class="animate-pop-in" href="SiteEquipment.html">Equipment</a></li>
-					<li><a id="wiki" class="animate-pop-in" href="#">Homebrew Wiki</a></li>
+					<li><a id="wiki" class="animate-pop-in" href="https://www.dandwiki.com/wiki/5e_Homebrew" target="_blank">Homebrew Wiki</a></li>
 					<li><a id="spells" class="animate-pop-in" href="SiteSpellList.html">Spell's List</a></li>
 					<li><a id="rules" class="animate-pop-in" href="SiteBasicRules.html">Basic Rules</a></li>
 					<li><a id="blog" class="animate-pop-in" href="SiteBlog.html">Ecosphere Blog</a></li>
 				</ul>
 				</nav>
 				</div>
-				<div class="info col-lg-8">
-		<section class="main">
+			<div class="info col-lg-6">
+			<section class="main">
+			<div class="back">
+				<p class="paragraph"><a href = "#" onclick="characterRoller(); return false;">Roll the Ability Scores for your character!</a></p>
+				<p class="paragraph" id="charScoreRoll">Your scores are: None</p>
+			</div>
+			<div class="back">
+				<p class="paragraph"><a href = "#" onclick="characterChooser(); return false;">Roll for a random character!</a></p>
+				<p class="paragraph" id="charChooseRoll">Your character: None</p>
+				<p class="paragraph"> Reminder: Clicking more than once in order to get a random class will not improve the chances of you getting the class you secretly want ;)</p>
+			</div>
 			<div class="back">
 			<h3 id="character-intro" >
 			The site is currently under construction, but here you will soon be able to look at any of the information you need for character creation!
@@ -44,6 +243,19 @@
 			<img id="squirrel-image" src="squirrel-armor.jpg" alt="A squirrel in armor!">
 			</section>
 			</div>
+				<div class="col-lg-3">
+					<div class="back" class="roller">
+						<h1 class="paragraph">Dice Roller</h1>
+						<p class="paragraph"><a href = "#" onclick="rollTheDie20(); return false;" >Roll a 20 sided dice</a></p>
+						<p class="paragraph"><a href = "#" onclick="rollTheDie12(); return false;" >Roll a 12 sided dice</a></p>
+						<p class="paragraph"><a href = "#" onclick="rollTheDie10(); return false;" >Roll a 10 sided dice</a></p>
+						<p class="paragraph"><a href = "#" onclick="rollTheDie8(); return false;" >Roll a 8 sided dice</a></p>
+						<p class="paragraph"><a href = "#" onclick="rollTheDie6(); return false;" >Roll a 6 sided dice</a></p>
+						<p class="paragraph"><a href = "#" onclick="rollTheDie4(); return false;" >Roll a 4 sided dice</a></p>
+						<p class="paragraph"><a href = "#" onclick="rollTheDie100(); return false;" >Roll a percentage dice (100 sides)</a></p>
+						<p class="paragraph" id = "die_roll_content">Your die roll is: None</p>
+					</div>
+				</div>
 		</div>
 		</div>
 		</div>

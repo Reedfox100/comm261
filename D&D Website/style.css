@@ -1,5 +1,4 @@
 ﻿html {
-	border:solid RGB(255,102,0);
 	margin: 20px;
 	border-width: 5px;
 	background-image: url(d&dbackground.jpg);
@@ -30,10 +29,10 @@ float: left;
 	min-height: 1000px;
 }
 #imgCharacters {
-	width: 50%;
+	
 }
 #ogdd {
-	width: 50%;
+	
 }
 .cta1	{
 	grid-area: cta1;
@@ -68,14 +67,15 @@ float: left;
 	justify-items: left;
 	align-content: left;
 	padding-left: 10px;
-	max-height: 400px;
+	max-height: 300px;
+	max-width: 250px;
 }
 .explanation	{
 	color: RGB(200,200,200);
 }
 .list	{
 	display:grid;
-	grid-template-columns: 300px 300px 300px 300px;
+	grid-template-columns: 280px 280px 280px 280px;
 	grid-template-areas:
 	"cta1 cta2 cta3 cta4"
 	"cta5 cta6 cta7 cta8"

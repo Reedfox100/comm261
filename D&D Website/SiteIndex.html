@@ -7,6 +7,81 @@
 		<title>D&D 5th Edition Campaign Helper</title>
 		<link href="style.css" rel="stylesheet" type="text/css" >
 		<link rel="icon" type="dice/jpg" href="dice.jpg" size="96x96">
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+		<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+
+		<script type="text/javascript">
+		$(document).ready(function(){
+        console.log("JQUERY IS READY!");
+		});
+		function rollTheDie100(){
+        console.log("rollTheDie() - start");    
+        $("#die_roll_content").html("Your die roll is <strong>: " +  Math.floor(Math.random()*100 + 1) + " out of 100</strong>");
+        console.log("rollTheDie() - #die_roll_content in your document was updated.");  
+		}
+		</script>
+		<script type="text/javascript">
+		$(document).ready(function(){
+        console.log("JQUERY IS READY!");
+		});
+		function rollTheDie20(){
+        console.log("rollTheDie() - start");    
+        $("#die_roll_content").html("Your die roll is <strong>: " +  Math.floor(Math.random()*20 + 1) + " out of 20</strong>");
+        console.log("rollTheDie() - #die_roll_content in your document was updated.");  
+		}
+		</script>
+		<script type="text/javascript">
+		$(document).ready(function(){
+        console.log("JQUERY IS READY!");
+		});
+		function rollTheDie12(){
+        console.log("rollTheDie() - start");    
+        $("#die_roll_content").html("Your die roll is <strong>: " +  Math.floor(Math.random()*12 + 1) + " out of 12</strong>");
+        console.log("rollTheDie() - #die_roll_content in your document was updated.");  
+		}
+		</script>
+		<script type="text/javascript">
+		$(document).ready(function(){
+        console.log("JQUERY IS READY!");
+		});
+		function rollTheDie10(){
+        console.log("rollTheDie() - start");    
+        $("#die_roll_content").html("Your die roll is <strong>: " +  Math.floor(Math.random()*10 + 1) + " out of 10</strong>");
+        console.log("rollTheDie() - #die_roll_content in your document was updated.");  
+		}
+		</script>
+		<script type="text/javascript">
+		$(document).ready(function(){
+        console.log("JQUERY IS READY!");
+		});
+		function rollTheDie8(){
+        console.log("rollTheDie() - start");    
+        $("#die_roll_content").html("Your die roll is <strong>: " +  Math.floor(Math.random()*8 + 1) + " out of 8</strong>");
+        console.log("rollTheDie() - #die_roll_content in your document was updated.");  
+		}
+		</script>
+		<script type="text/javascript">
+		$(document).ready(function(){
+        console.log("JQUERY IS READY!");
+		});
+		function rollTheDie6(){
+        console.log("rollTheDie() - start");    
+        $("#die_roll_content").html("Your die roll is <strong>: " +  Math.floor(Math.random()*6 + 1) + " out of 6</strong>");
+        console.log("rollTheDie() - #die_roll_content in your document was updated.");  
+		}
+		</script>
+		<script type="text/javascript">
+		$(document).ready(function(){
+        console.log("JQUERY IS READY!");
+		});
+		function rollTheDie4(){
+        console.log("rollTheDie() - start");    
+        $("#die_roll_content").html("Your die roll is <strong>: " +  Math.floor(Math.random()*4 + 1) + " out of 4</strong>");
+        console.log("rollTheDie() - #die_roll_content in your document was updated.");  
+		}
+		</script>
+
 		</head>
 	<body class="holder">
 		<header>
@@ -16,42 +91,55 @@
 		</header>
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-4 d-flex align-items-start">
+				<div class="col-lg-3 d-flex align-items-start">
 				<nav class="main-nav">
 				<ul>
 					<li><a id="home" class="animate-pop-in" href="SiteIndex.html">Home</a></li>
 					<li><a id="character" class="animate-pop-in" href="SiteCharacterCreation.html">Character Creation</a></li>
 					<li><a id="equip" class="animate-pop-in" href="SiteEquipment.html">Equipment</a></li>
-					<li><a id="wiki" class="animate-pop-in" href="#">Homebrew Wiki</a></li>
+					<li><a id="wiki" class="animate-pop-in" href="https://www.dandwiki.com/wiki/5e_Homebrew" target="_blank">Homebrew Wiki</a></li>
 					<li><a id="spells" class="animate-pop-in" href="SiteSpellList.html">Spell's List</a></li>
 					<li><a id="rules" class="animate-pop-in" href="SiteBasicRules.html">Basic Rules</a></li>
 					<li><a id="blog" class="animate-pop-in" href="SiteBlog.html">Ecosphere Blog</a></li>
 				</ul>
 				</nav>
 				</div>
-				<div class="info col-lg-8">
-			<img id="quarrel" src="quarrel.jpg" alt="A fight that you hope not to get into with the party.">
-			<section id="main">
-			<div class="back">
-				<h2 style="color: RGB(255,255,255)">Welcome to the Tavern!</h2>
-				<h3 class="paragraph">
-				Hello there! Pull up a chair and relax! This is the tavern where you can relax before your session of D&D so that your players don't need to be looking at your delicate
-				information for the story. Click any any of the links within the navigation menu to go where you may want to go. We have most of everyhting you will need. If there happns to not
-				be enough of a certain something or we don't have what you are looking for, please let me know at the given email at the bottom of this page. Sit back, relax, and enjoy the impending session, friend!
-				</h3>	
-				<h2 id="DM-rules-title">The 5 best rules for DMing</h2>
-				<ol class="DM-rules", style="font-size:18px">
-					<li>The game isn't all about you. It's the players who are playing.</li>
-					<li>Let the dice do the talking.</li>
-					<li>Make up everything.</li>
-					<li>Don't forget about the passive traits.</li>
-					<li>Your word is law. They need to deal with it.</li>
-				</ol>
-				</section>
+				<div class="info col-lg-6">
+					<img id="quarrel" src="quarrel.jpg" alt="A fight that you hope not to get into with the party.">
+					<section id="main">
+						<div class="back">
+							<h2 style="color: RGB(255,255,255)">Welcome to the Tavern!</h2>
+							<h3 class="paragraph">
+							Hello there! Pull up a chair and relax! This is the tavern where you can relax before your session of D&D so that your players don't need to be looking at your delicate
+							information for the story. Click any any of the links within the navigation menu to go where you may want to go. We have most of everyhting you will need. If there happns to not
+							be enough of a certain something or we don't have what you are looking for, please let me know at the given email at the bottom of this page. Sit back, relax, and enjoy the impending session, friend!
+							</h3>	
+							<h2 id="DM-rules-title">The 5 best rules for DMing</h2>
+							<ol class="DM-rules", style="font-size:18px">
+								<li>The game isn't all about you. It's the players who are playing.</li>
+								<li>Let the dice do the talking.</li>
+								<li>Make up everything.</li>
+								<li>Don't forget about the passive traits.</li>
+								<li>Your word is law. They need to deal with it.</li>
+							</ol>
+						</div>
+					</section>
 				<h3 id="inspiration">In D&D, you can choose to be anyone!</h3>
-				</div>
 				<img id="imgCharacters" src="characters.jpg" alt="Anyone you can dream to be, you can be in D&D.">
 				<img id="ogdd" src="ogD&D.jpg" alt="The original cover of a D&D handbook">
+				</div>
+				<div class="col-lg-3">
+					<div class="back" class="roller">
+						<h1 class="paragraph">Dice Roller</h1>
+						<p class="paragraph"><a href = "#" onclick="rollTheDie20(); return false;" >Roll a 20 sided dice</a></p>
+						<p class="paragraph"><a href = "#" onclick="rollTheDie12(); return false;" >Roll a 12 sided dice</a></p>
+						<p class="paragraph"><a href = "#" onclick="rollTheDie10(); return false;" >Roll a 10 sided dice</a></p>
+						<p class="paragraph"><a href = "#" onclick="rollTheDie8(); return false;" >Roll a 8 sided dice</a></p>
+						<p class="paragraph"><a href = "#" onclick="rollTheDie6(); return false;" >Roll a 6 sided dice</a></p>
+						<p class="paragraph"><a href = "#" onclick="rollTheDie4(); return false;" >Roll a 4 sided dice</a></p>
+						<p class="paragraph"><a href = "#" onclick="rollTheDie100(); return false;" >Roll a percentage dice (100 sides)</a></p>
+						<p class="paragraph" id = "die_roll_content">Your die roll is: None</p>
+					</div>
 				</div>
 			</div>
 		</div>
